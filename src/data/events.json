@@ -1,0 +1,40 @@
+[
+  {
+    "id": "e1",
+    "name": "The Unmute Room: Open Mic and Bollywood Jamming Session",
+    "date": "2026-08-02T18:00:00Z",
+    "time": "6:00 PM - 10:00 PM",
+    "venue": "Hungry Hippie, Koramangla",
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.581035280904!2d77.6157307!3d12.934627599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144e28dccea9%3A0xd98e6d46253aa3ec!2sHungry%20Hippie!5e0!3m2!1sen!2sin!4v1784869845945!5m2!1sen!2sin",
+    "agenda": [
+      { "time": "6:00 PM", "title": "Doors Open & Networking" },
+      { "time": "6:30 PM", "title": "Open Mic Starts" },
+      { "time": "8:00 PM", "title": "Bollywood Jamming Session" }
+
+    ],
+    "availableSeats": 15,
+    "price": 99,
+    "status": "upcoming",
+    "earlyBird": true,
+    "coupon": "UNMUTE20",
+    "highlights": []
+  },
+  {
+    "id": "e2",
+    "name": "The Unmute Room: Winter Chronicles",
+    "date": "2025-12-10T19:00:00Z",
+    "venue": "Hungry Hippi, Koramangla",
+    "attendees": 120,
+    "theme": "Acoustic & Spoken Word",
+    "status": "past",
+    "photos": [
+      "/images/gallery/past-1.jpg",
+      "/images/gallery/past-2.jpg"
+    ],
+    "highlights": [
+      "Over 20 original poetry pieces performed.",
+      "An unexpected collaborative jam session.",
+      "Sold-out venue with a cozy winter vibe."
+    ]
+  }
+]

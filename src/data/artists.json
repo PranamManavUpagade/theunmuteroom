@@ -1,0 +1,30 @@
+[
+  {
+    "id": "a1",
+    "name": "Aarav Singh",
+    "category": "Musician",
+    "instagram": "https://instagram.com/dummy",
+    "photo": "/images/artists/artist-1.jpg"
+  },
+  {
+    "id": "a2",
+    "name": "Priya Sharma",
+    "category": "Poet",
+    "instagram": "https://instagram.com/dummy",
+    "photo": "/images/artists/artist-2.jpg"
+  },
+  {
+    "id": "a3",
+    "name": "Karan Kapoor",
+    "category": "Storyteller",
+    "instagram": "https://instagram.com/dummy",
+    "photo": "/images/artists/artist-3.jpg"
+  },
+  {
+    "id": "a4",
+    "name": "Neha Gupta",
+    "category": "Singer",
+    "instagram": "https://instagram.com/dummy",
+    "photo": "/images/artists/artist-4.jpg"
+  }
+]

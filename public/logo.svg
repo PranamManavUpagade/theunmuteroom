@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 350" width="300" height="350">
+  <!-- Background -->
+  <rect width="300" height="350" fill="transparent" />
+  
+  <!-- Arch / Window -->
+  <path d="M 75 125 A 75 75 0 0 1 225 125 L 225 250 L 75 250 Z" fill="#111111" />
+  
+  <!-- Spotlight -->
+  <polygon points="150,30 90,260 210,260" fill="url(#spotlightGrad)" />
+  <ellipse cx="150" cy="255" rx="65" ry="12" fill="#D4AF37" opacity="0.4" />
+  
+  <!-- Spotlight source glow -->
+  <path d="M 140 30 C 140 25 160 25 160 30 C 160 35 140 35 140 30" fill="#FFFBEB" />
+
+  <!-- Microphone Base & Stand -->
+  <line x1="150" y1="250" x2="150" y2="135" stroke="#333333" stroke-width="4" />
+  <ellipse cx="150" cy="250" rx="15" ry="4" fill="#333333" />
+  
+  <!-- Microphone Head -->
+  <circle cx="145" cy="125" r="8" fill="#333333" />
+  <!-- Mic detail/pop filter -->
+  <path d="M 152 135 C 165 140 170 125 165 115" fill="none" stroke="#333333" stroke-width="3" stroke-linecap="round" />
+  <circle cx="165" cy="113" r="10" fill="#333333" />
+  <line x1="152" y1="135" x2="155" y2="155" stroke="#333333" stroke-width="2" />
+  
+  <!-- Text: The -->
+  <text x="150" y="270" font-family="serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal">The</text>
+  
+  <!-- Text: UNMUTE -->
+  <text x="150" y="300" font-family="serif" font-size="34" fill="#111111" text-anchor="middle" font-weight="bold" letter-spacing="2">UNMUTE</text>
+  
+  <!-- Text: ROOM -->
+  <text x="150" y="335" font-family="serif" font-size="34" fill="#111111" text-anchor="middle" font-weight="bold" letter-spacing="4">ROOM</text>
+  
+  <!-- Bottom Line -->
+  <line x1="50" y1="345" x2="250" y2="345" stroke="#D4AF37" stroke-width="1.5" />
+  <circle cx="50" cy="345" r="3" fill="#D4AF37" />
+  <circle cx="250" cy="345" r="3" fill="#D4AF37" />
+
+  <defs>
+    <linearGradient id="spotlightGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8D6" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#E5C158" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+</svg>

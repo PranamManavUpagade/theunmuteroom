@@ -1,0 +1,98 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { Moon, Sun, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { motion, AnimatePresence } from "framer-motion";
+
+export function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <>
+      <nav
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm py-3" : "bg-transparent py-5"
+        }`}
+      >
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <a href="#" className="flex items-center gap-2">
+            <img src="/logo.svg" alt="The Unmute Room Logo" className="h-16 w-auto object-contain bg-white/90 p-1 rounded-md" />
+          </a>
+
+          <div className="hidden md:flex items-center gap-8 font-medium">
+            
+            <div className="flex items-center gap-4 border-l border-border pl-8">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="rounded-full"
+              >
+                <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                <span className="sr-only">Toggle theme</span>
+              </Button>
+              <a href="https://chat.whatsapp.com/IMNB7lMxxRK9rBBIPQNR4Q"><Button className="rounded-full bg-primary hover:bg-primary/90 text-white px-6">
+                Join Us
+              </Button></a>
+            </div>
+          </div>
+
+          <div className="md:hidden flex items-center gap-4">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="rounded-full"
+            >
+              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <span className="sr-only">Toggle theme</span>
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="fixed inset-0 z-40 bg-background/95 backdrop-blur-md pt-24 px-4 pb-8 flex flex-col md:hidden"
+          >
+            <div className="flex flex-col gap-6 text-2xl font-medium mt-8">
+              <a href="#" className="hover:text-primary transition-colors">About</a>
+              <a href="#" className="hover:text-primary transition-colors">Events</a>
+              <a href="#" className="hover:text-primary transition-colors">Community</a>
+              <a href="#" className="hover:text-primary transition-colors">FAQ</a>
+              <Button className="rounded-full bg-primary hover:bg-primary/90 text-white w-full h-14 mt-4 text-lg">
+                Join Us
+              </Button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
