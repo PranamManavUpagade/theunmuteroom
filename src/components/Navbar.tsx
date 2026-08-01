@@ -1,14 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from 'next/image';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,17 +45,13 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="md:hidden flex items-center gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="rounded-full"
-            >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
+          <div className="md:hidden flex items-center gap-3">
+            <a href="https://www.instagram.com/theunmuteroom/" target="_blank" rel="noopener noreferrer" className="rounded-full p-1">
+              <Image src="/instagram.svg" alt="Instagram" width={24} height={24} />
+            </a>
+            <a href="https://chat.whatsapp.com/IMNB7lMxxRK9rBBIPQNR4Q" target="_blank" rel="noopener noreferrer" className="rounded-full p-1">
+              <Image src="/whatsapp.svg" alt="WhatsApp" width={24} height={24} />
+            </a>
           </div>
         </div>
       </nav>
