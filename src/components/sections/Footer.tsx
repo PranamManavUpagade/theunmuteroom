@@ -1,4 +1,5 @@
 import { Heart, MessageCircle, Camera } from "lucide-react";
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -10,12 +11,12 @@ export function Footer() {
             A safe space for self-expression, art, and human connection. We believe that everyone has a story, and every story deserves a stage.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white transition-all">
-              <Camera className="w-6 h-6" />
-            </a>
-            <a href="https://chat.whatsapp.com/IMNB7lMxxRK9rBBIPQNR4Q" className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-green-600 hover:text-white transition-all">
-              <MessageCircle className="w-6 h-6" />
-            </a>
+           <a href="https://www.instagram.com/theunmuteroom/" target="_blank" rel="noopener noreferrer">
+             <Image src="/instagram.svg" alt="Instagram" width={30} height={30} />
+           </a>
+            <a href="https://chat.whatsapp.com/IMNB7lMxxRK9rBBIPQNR4Q" target="_blank" rel="noopener noreferrer">
+             <Image src="/whatsapp.svg" alt="WhatsApp" width={30} height={30} />
+           </a>
           </div>
         </div>
 
