@@ -1,7 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/sections/Footer";
 
-const LYRICS = `1. O o jane jana dhunde tujhe diwana (mera khwab meri khayalo ki rani)
+const LYRICS = `1. O o jane jana dhunde tujhe diwana (mera khwab meri khayalo ki
+rani)
 O O Jaane Jaana
 Dhoondhe Tujhe Deewana
 Sapnoo Mein Roz Aaye
@@ -143,7 +144,7 @@ Tu haan kar ya naa kar
 Tu hai meri Kiran
 Tu hai meri Kiran
 
-10. Ye chand sa roshan chehra
+1. Ye chand sa roshan chehra
 Ye chaand saa roshan cheharaa
 Zulfon kaa rang suneharaa
 Ye jheel see neelee aankhein
@@ -161,7 +162,7 @@ Sau baar sambhaalaa dil ko
 Par ho ke rahaa bekaaboo
 Taareef karu kyaa uski
 
-11. Mere samne wali khidki
+2. Mere samne wali khidki
 Mere Samne Wali Khidki Mein
 Ek Chaand Ka Tukda Rehta Hai
 Mere Samne Wali Khidki Mein
@@ -179,7 +180,7 @@ Woh Chanchal Mukhra Rehta Hai
 Mere Saamne Wali Khidki Mein
 Ek Chaand Ka Tukda Rehta Hai
 
-12. Chala jaata hoon
+3. Chala jaata hoon
 Chalaa jaataa hun
 Kisi ki dhun me
 Dhadakate dil ke
@@ -213,7 +214,7 @@ Kisi ki dhun me
 Dhadakate dil ke
 Taraane liye
 
-13. Yeh shaam mastani
+4. Yeh shaam mastani
 ye shaam mastaanee madahosh kiye jae
 mujhe dor koee kheenche teree or lie jae
 ye shaam mastaanee madahosh kiye jae
@@ -225,7 +226,7 @@ aisa lage jaise ke too hans ke zahar koee peeye jae
 ye shaam mastaanee madahosh kiye jae
 mujhe dor koee kheenche teree or lie jae
 
-14. Jay jay shiv shankar
+5. Jay jay shiv shankar
 Hey jai jai shiv shankar kanta lage na kankar
 Hey jai jai shiv shankar kanta lage na kankar
 Ke pyala tere nam ka piya
@@ -249,7 +250,7 @@ Ho o o gir jaoongi main mar jaoongi
 Jo tune mujhe tham na liya o sau rabadi
 O bansi bhaiyya..he he he..
 
-15. Ek ajnaabe
+6. Ek ajnaabe
 Ek ajnabi hasina se
 Yun mulaaqat ho gayi
 Ek ajnabi hasina se
@@ -272,7 +273,7 @@ Yun mulakat ho gayi
 Phir kya hua yeh na puchho
 Kuch aisi baat ho gayi
 
-16. kya hua tera wada
+7. kya hua tera wada
 Ek ajnabi hasina se
 Yun mulaaqat ho gayi
 Ek ajnabi hasina se
@@ -295,7 +296,7 @@ Yun mulakat ho gayi
 Phir kya hua yeh na puchho
 Kuch aisi baat ho gayi
 
-17. Bachna ae hasino
+8. Bachna ae hasino
 Tujhse Log Kahenge
 Na Kar Pyaar Mujhe
 Main Toh Lakh Bura Hoon
@@ -318,7 +319,7 @@ Lo Main Aa Gaya
 Ae Bachna Ae Haseeno
 Lo Main Aa Gaya
 
-18. Pyar diwani hota hai
+9. Pyar diwani hota hai
 Pyar Diwana Hota Hai Mastana Hota Hai
 Har khushi se har gam se begana hota hai.....
 Shama kahe parawane se pare chala ja
@@ -328,7 +329,7 @@ Har khushi se har gam se begana hota hai
 Pyar diwana hota hai mastana hota hai
 Har khushi se har gam se begana hota hai
 
-19. Zara sa dil mai de jagah tu
+1. Zara sa dil mai de jagah tu
 Zara si dil mein de jagah tu
 Zara sa apna le bana
 Zara sa khawbon mein saja tu
@@ -338,7 +339,6 @@ Meri jaan bepanah
 Fida hoon tujhpe
 Meri jaan bepanah
 Wooooo hhhhooo ooohhhh hooo…
-Song Lyrics & Tabs
 Zara si dil mein de jagah tu
 Zara sa apna le bana
 Zara sa khawbon mein saja tu
@@ -359,7 +359,7 @@ Zara sa apna le bana
 Zara sa khawbon mein saja tu
 Zara sa yaadhon mein basa
 
-20. Haale dil
+2. Haale dil
 hale dil tujhko sunaata
 dil agar yeh bol paata
 bakhuda tujhko hai chaahta jaan
@@ -379,15 +379,13 @@ tere sang jo pal bitaata
 waqt se main woh maang laata
 yaad karke muskuraata haan
 
-21. Dil abadaat
-
-22. Tu he meri shab hai
+3. Tu he meri shab hai
 Tu hi meri shab hai, subha hai, tu hi din hai mera
 Tu hi mera rab hai, jahaan hai, tu hi meri duniya
 Tu waqt mere liye, main hoon tera lamha
 Kaise rahega bhala hoke tu mujhse judaa?
 
-23. Kya mujhe pyaar
+4. Kya mujhe pyaar
 Aankhen teri shabnami, chehra tera aaina
 Tu hai udaasi bhari koi haseen dastaan
 Aankhen teri shabnami, chehra tera aaina
@@ -400,8 +398,12 @@ Tu hi meri shab hai, subha hai, tu hi din hai mera
 Tu hi mera rab hai, jahaan hai, tu hi meri duniya
 Tu waqt mere liye, main hoon tera lamha
 Kaise rahega bhala hoke tu mujhse judaa?
+Oh-oh-oh-oh-oh-oh, oh
+Oh-oh-oh-oh-oh-oh-oh
+Oh-oh-oh-oh-oh-oh, oh
+Oh-oh-oh-oh-oh-oh-oh
 
-24. Tujhe sochta hu mai
+5. Tujhe sochta hu mai
 Tujhe sochta hoon main shaam o subah
 Iss se zyada tujhe aur chahoon toh kya
 Tere hi khayalon mein dooba raha
@@ -415,7 +417,7 @@ Aaa aa aaa.... sang hoon tere
 Aaa aa aaa.... sang hoon tere
 Aaa aa aa.... sang hoon tere
 
-25. Kaho na kaho ye ankhein bolti hai
+6. Kaho na kaho ye ankhein bolti hai
 Kaho Na Kaho
 Yeh Aankhen Bolti Hai
 O Sanam O Sanam
@@ -433,7 +435,7 @@ Sab Se Alag Pehchaan Unki
 Unse Hai Pyaar Ki Kahani Mansoob
 Aati Jaati Saanson Ki Rawaani Mansoob
 
-26. Sach kehe raha hai diwana
+7. Sach kehe raha hai diwana
 Sach keh raha hai deewana dil
 Dil na kisi se lagana
 Jhoothe hai yaar ke vaade saare
@@ -451,7 +453,7 @@ Jisse chaaha, jisse pooja
 Ussi ne yaaron mera dil
 Toda toda, tanha tanha chhoda
 
-27. Alvida
+8. Alvida
 Chhup ke se kahin ... dheeme paaon se ...
 Jaane kis tarah, kis ghadi?
 Aage bad gaye hum se rahoon main
