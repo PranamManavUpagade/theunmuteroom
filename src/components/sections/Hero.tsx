@@ -38,13 +38,16 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="mt-10 flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center"
         >
           <a href="#e1"><Button size="lg" className="rounded-full text-lg px-8 h-14 bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_rgba(91,33,182,0.4)] transition-all hover:scale-105">
             Join Our Next Event
           </Button></a>
           <a href="https://chat.whatsapp.com/IMNB7lMxxRK9rBBIPQNR4Q"><Button size="lg" variant="outline" className="rounded-full text-lg px-8 h-14 border-primary/20 hover:bg-primary/5 transition-all hover:scale-105">
             Become a Member
+          </Button></a>
+          <a href="/jamming-song-list"><Button size="lg" variant="secondary" className="rounded-full text-lg px-8 h-14 shadow-[0_0_20px_rgba(212,175,55,0.2)] transition-all hover:scale-105">
+            Jamming Song List
           </Button></a>
         </motion.div>
       </div>
