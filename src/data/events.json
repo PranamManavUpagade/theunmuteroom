@@ -1,7 +1,7 @@
 [
   {
     "id": "e1",
-    "name": "The Unmute Room: Open Mic and Bollywood Jamming Session",
+    "name": "The Unmute Room: Open Mic and Jamming Session",
     "date": "2026-08-21T18:00:00Z",
     "time": "7:00 PM - 10:00 PM",
     "venue": "Euphoria Cafe, Koramangla",
@@ -9,7 +9,7 @@
     "agenda": [
       { "time": "7:00 PM", "title": "Doors Open & Networking" },
       { "time": "7:30 PM", "title": "Open Mic Starts" },
-      { "time": "9:00 PM", "title": "Bollywood Jamming Session" }
+      { "time": "9:00 PM", "title": "Jamming Session" }
 
     ],
     "availableSeats": 10,
