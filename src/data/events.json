@@ -2,18 +2,18 @@
   {
     "id": "e1",
     "name": "The Unmute Room: Open Mic and Bollywood Jamming Session",
-    "date": "2026-08-02T18:00:00Z",
-    "time": "6:00 PM - 10:00 PM",
-    "venue": "Hungry Hippie, Koramangla",
-    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.581035280904!2d77.6157307!3d12.934627599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144e28dccea9%3A0xd98e6d46253aa3ec!2sHungry%20Hippie!5e0!3m2!1sen!2sin!4v1784869845945!5m2!1sen!2sin",
+    "date": "2026-08-21T18:00:00Z",
+    "time": "7:00 PM - 10:00 PM",
+    "venue": "Euphoria Cafe, Koramangla",
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.511671423783!2d77.6200597757228!3d12.93907691558921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15b7b2449667%3A0x23391b64189cd304!2sEuphoria%20Cafe!5e0!3m2!1sen!2sin!4v1786993879779!5m2!1sen!2sin",
     "agenda": [
-      { "time": "6:00 PM", "title": "Doors Open & Networking" },
-      { "time": "6:30 PM", "title": "Open Mic Starts" },
-      { "time": "8:00 PM", "title": "Bollywood Jamming Session" }
+      { "time": "7:00 PM", "title": "Doors Open & Networking" },
+      { "time": "7:30 PM", "title": "Open Mic Starts" },
+      { "time": "9:00 PM", "title": "Bollywood Jamming Session" }
 
     ],
-    "availableSeats": 15,
-    "price": 249,
+    "availableSeats": 10,
+    "price": 199,
     "status": "upcoming",
     "earlyBird": true,
     "coupon": "UNMUTE20",

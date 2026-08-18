@@ -6,10 +6,9 @@ import { Calendar, Clock, MapPin, Ticket, CreditCard } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "@/components/ui/dialog";
-import { Label } from "@/components/ui/label";
 import eventsData from "@/data/events.json";
+
+const PAYU_CHECKOUT_URL = "https://u.payu.in/PAYUMN/wrE7toZcUSqh";
 
 export function UpcomingEvent() {
   const upcomingEvent = eventsData.find((e) => e.status === "upcoming");
@@ -150,61 +149,18 @@ export function UpcomingEvent() {
                       </div>
                     </div>
 
-                    <Dialog>
-                      <DialogTrigger 
-                        render={
-                          <Button className="w-full h-14 text-lg bg-primary hover:bg-primary/90 text-white rounded-xl shadow-[0_0_20px_rgba(91,33,182,0.3)] hover:shadow-[0_0_30px_rgba(91,33,182,0.5)] transition-all" />
-                        }
-                      >
-                        <Ticket className="w-5 h-5 mr-2" />
-                        Reserve Your Spot
-                      </DialogTrigger>
-                      <DialogContent className="sm:max-w-[425px]">
-                        <DialogHeader>
-                          <DialogTitle>Register for Event</DialogTitle>
-                          <DialogDescription>
-                            Enter your details to secure your spot. Payment gateways will load securely.
-                          </DialogDescription>
-                        </DialogHeader>
-                        <div className="grid gap-4 py-4">
-                          <div className="grid gap-2">
-                            <Label htmlFor="name">Full Name</Label>
-                            <Input id="name" placeholder="John Doe" />
-                          </div>
-                          <div className="grid gap-2">
-                            <Label htmlFor="email">Email Address</Label>
-                            <Input id="email" type="email" placeholder="john@example.com" />
-                          </div>
-                          <div className="grid gap-2">
-                            <Label htmlFor="phone">Phone Number</Label>
-                            <Input id="phone" type="tel" placeholder="+91 98765 43210" />
-                          </div>
-                          <div className="grid gap-2">
-                            <Label htmlFor="instagram">Instagram Handle</Label>
-                            <Input id="instagram" placeholder="@johndoe" />
-                          </div>
-                          
-                          <div className="mt-4 p-4 bg-muted rounded-lg flex items-center justify-between border border-border">
-                            <div className="flex items-center gap-2">
-                              <CreditCard className="w-5 h-5 text-muted-foreground" />
-                              <span className="text-sm font-medium">Total Amount</span>
-                            </div>
-                            <span className="font-bold">₹{upcomingEvent.price}</span>
-                          </div>
-                          
-                          <div className="flex gap-2 justify-center mt-2 opacity-50">
-                            {/* Placeholders for Razorpay, Stripe, UPI */}
-                            <Badge variant="outline">Razorpay</Badge>
-                            <Badge variant="outline">UPI</Badge>
-                            <Badge variant="outline">Stripe</Badge>
-                          </div>
-                        </div>
-                        <Button className="w-full bg-primary hover:bg-primary/90">Proceed to Payment</Button>
-                      </DialogContent>
-                    </Dialog>
-                    
+                    <Button
+                      onClick={() => {
+                        window.location.href = PAYU_CHECKOUT_URL;
+                      }}
+                      className="w-full h-14 text-lg bg-primary hover:bg-primary/90 text-white rounded-xl shadow-[0_0_20px_rgba(91,33,182,0.3)] hover:shadow-[0_0_30px_rgba(91,33,182,0.5)] transition-all"
+                    >
+                      <Ticket className="w-5 h-5 mr-2" />
+                      Reserve Your Spot
+                    </Button>
+
                     <p className="text-center text-xs text-muted-foreground mt-4 flex items-center justify-center gap-1">
-                      <CreditCard className="w-3 h-3" /> Secure payments via Razorpay & Stripe
+                      <CreditCard className="w-3 h-3" /> Secure payment via PayU
                     </p>
                   </div>
                 </CardContent>
