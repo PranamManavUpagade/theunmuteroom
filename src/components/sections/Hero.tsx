@@ -46,9 +46,9 @@ export function Hero() {
           <a href="https://chat.whatsapp.com/IMNB7lMxxRK9rBBIPQNR4Q"><Button size="lg" variant="outline" className="rounded-full text-lg px-8 h-14 border-primary/20 hover:bg-primary/5 transition-all hover:scale-105">
             Become a Member
           </Button></a>
-          <a href="/jamming-song-list"><Button size="lg" variant="secondary" className="rounded-full text-lg px-8 h-14 shadow-[0_0_20px_rgba(212,175,55,0.2)] transition-all hover:scale-105">
-            Jamming Song List
-          </Button></a>
+          {/*<a href="/jamming-song-list"><Button size="lg" variant="secondary" className="rounded-full text-lg px-8 h-14 shadow-[0_0_20px_rgba(212,175,55,0.2)] transition-all hover:scale-105">
+          //  Jamming Song List
+          </Button></a>*/}
         </motion.div>
       </div>
 

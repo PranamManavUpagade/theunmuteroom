@@ -8,8 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import eventsData from "@/data/events.json";
 
-const PAYU_CHECKOUT_URL = "https://u.payu.in/PAYUMN/wrE7toZcUSqh";
-
 export function UpcomingEvent() {
   const upcomingEvent = eventsData.find((e) => e.status === "upcoming");
   
@@ -151,7 +149,7 @@ export function UpcomingEvent() {
 
                     <Button
                       onClick={() => {
-                        window.location.href = PAYU_CHECKOUT_URL;
+                        window.location.href = "https://rzp.io/rzp/yLayi7W";
                       }}
                       className="w-full h-14 text-lg bg-primary hover:bg-primary/90 text-white rounded-xl shadow-[0_0_20px_rgba(91,33,182,0.3)] hover:shadow-[0_0_30px_rgba(91,33,182,0.5)] transition-all"
                     >
